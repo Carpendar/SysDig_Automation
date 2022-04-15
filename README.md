@@ -15,8 +15,8 @@ Selenium-Jupiter can be used to control local browsers programmatically using Se
 ### Build Execute
 
 ```
-$cd SysDig_Automation - root of project
-$  ./gradlew :cleanTest :test --tests "Login_TC" - 
+$ cd SysDig_Automation
+$ ./gradlew :cleanTest :test --tests "Login_TC"
 ```
 ## Implement scenarios and scripts
 - Create java class that extends TestBase.java. 
