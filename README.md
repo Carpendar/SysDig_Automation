@@ -1,9 +1,9 @@
 # SysDig_Automation
 
-A collection of practices, workflows, scripts and scenarios
+A collection of practices, scripts and scenarios with the intent to automate the validation of SysDig SUT.
 
 ## Introduction/Technology Stack
-  #[![][Logo]][Selenium-Jupiter]
+#![]   [Logo]
   [Selenium-Jupiter] is an open-source Java library that implements a [JUnit 5] extension for developing [Selenium WebDriver] tests. Selenium-Jupiter uses several features of the Jupiter extension (such as parameters resolution, test templates, or conditional test execution). Thanks to this, the resulting Selenium-Jupiter tests follow a minimalist approach (i.e., the required boilerplate code for WebDriver is reduced) while providing a wide range of advanced features for end-to-end testing.
 ## Local browsers
 Selenium-Jupiter can be used to control local browsers programmatically using Selenium WebDriver. To do that, we need to specify the flavor of the browser to be used by declaring `WebDriver` parameters in tests or constructors. For instance, we declare a `ChromeDriver` parameter to use Chrome, `FirefoxDriver` for Firefox, and so on.
@@ -17,13 +17,17 @@ Selenium-Jupiter can be used to control local browsers programmatically using Se
 $cd SysDig_Automation - root of project
 $  ./gradlew :cleanTest :test --tests "Login_TC" - 
 ```
-## Implement selenium testing scenarios and scripts
-- Create java class that extends TestBase.java
+## Implement scenarios and scripts
+- Create java class that extends TestBase.java. 
+- Test class naming convention, {Scenario}TC-{INT}
 - Create annotations for elements and test methods.
 
 
 ## TODO
-- Add more resullt
+- Add expanded test result summary. [https://roukou.org/2021/10/08/junit5-readable-reports-with-gradle/ ]
+- Multi browser support.
+- Validate 100% coverage, currently only MVP login validated at this time.
+- Consider using Serenity Screenplay for BDD/TDD strategy [https://serenity-bdd.github.io/theserenitybook/latest/index.html]
 
 
 [Logo]: https://bonigarcia.dev/img/seljup.png
