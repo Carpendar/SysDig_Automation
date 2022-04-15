@@ -11,6 +11,7 @@ Selenium-Jupiter can be used to control local browsers programmatically using Se
 - Page Object Model (POM)
 - Base Test abstract object to enforce setting Url and browser
 - Selenium Page Factory uses lazy loading of WebElements
+- SOLID [https://www.baeldung.com/solid-principles]
 ### Build Execute
 
 ```
@@ -28,7 +29,7 @@ $  ./gradlew :cleanTest :test --tests "Login_TC" -
 - Multi browser support.
 - Validate 100% coverage, currently only MVP login validated at this time.
 - Consider using Serenity Screenplay for BDD/TDD strategy [https://serenity-bdd.github.io/theserenitybook/latest/index.html]
-
+- Consider DI and parametrization Spring boot [ https://howtodoinjava.com/spring-boot2/testing/spring-boot-2-junit-5/ ]
 
 [Logo]: https://bonigarcia.dev/img/seljup.png
 [Selenium-Jupiter]: https://bonigarcia.dev/selenium-jupiter/
